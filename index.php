@@ -1,4 +1,3 @@
-<?php require_once 'process/koneksi.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,19 +24,32 @@
     <!-- BOOK CONTENT -->
     <div class="container">
         <div class="row">
-            <?php
-            $books = tampilSemuaBuku();
-            foreach ($books as $book) :
-            ?>
-                <div class="col-md-3 mb-4">
-                    <div class="col-md-12 book-content bg-light">
-                        <h3 class="judul"><?php echo $book['judul']; ?></h3>
-                        <span class="badge bg-info mb-3">Tahun Terbit <?php echo $book['tahun_terbit']; ?></span>
-                        <span class="d-block">Pengarang: <?php echo $book['penulis']; ?></span>
-                        <span class="d-block">Jumlah Halaman: <?php echo $book['jumlah_halaman']; ?></span>
-                    </div>
+            <div class="col-md-3 mb-4">
+                <div class="col-md-12 book-content bg-light">
+                    <h3 class="judul">Self Coaching Tips Easily</h3>
+                    <span class="badge bg-info mb-3">Tahun Terbit 2017</span>
+                    <span class="d-block">Pengarang: Muhamad Ndaru</span>
+                    <span class="d-block">Jumlah Halaman: 100</span>
                 </div>
-            <?php endforeach ?>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="col-md-12 book-content bg-light">
+                    <h3 class="judul">30 Days Challenge Of Life</h3>
+                    <span class="badge bg-info mb-3">Tahun Terbit 2020</span>
+                    <span class="d-block">Pengarang: Agus Gunawan</span>
+                    <span class="d-block">Jumlah Halaman: 94</span>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="col-md-12 book-content bg-light">
+                    <h3 class="judul">Materi Gagasan Pokok</h3>
+                    <span class="badge bg-info mb-3">Tahun Terbit 2019</span>
+                    <span class="d-block">Pengarang: Asep Gunawan</span>
+                    <span class="d-block">Jumlah Halaman: 100</span>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -1,4 +1,3 @@
-<?php require_once '../process/koneksi.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +19,7 @@
         <div class="col-md-8 bg-light table-wrapper">
             <h3>Manage Book</h3>
             <hr>
-            <a href="<?= $baseURL . 'managements/create-book.php'; ?>" class="btn btn-dark btn-sm mb-4">Tambah Buku</a>
+            <a href="#" class="btn btn-dark btn-sm mb-4">Tambah Buku</a>
             <table class=" table">
                 <thead>
                     <tr align="center">
@@ -33,23 +32,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    $books = tampilSemuaBuku();
-                    $nomor = 1;
-                    foreach ($books as $book) :
-                    ?>
-                        <tr>
-                            <th><?= $nomor++; ?></th>
-                            <td><?= $book['judul']; ?></td>
-                            <td><?= $book['penulis']; ?></td>
-                            <td><?= $book['tahun_terbit']; ?></td>
-                            <td><?= $book['jumlah_halaman']; ?></td>
-                            <td>
-                                <a href="edit-book.php?id=<?= $book['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
-                                <a href="delete-book.php?id=<?= $book['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Anda yakin ingin menghapus buku?')">Delete</a>
-                            </td>
-                        </tr>
-                    <?php endforeach; ?>
+                    <tr>
+                        <th>1</th>
+                        <td>Self Coaching Tips Easily</td>
+                        <td>Muhamad Ndaru</td>
+                        <td>2017</td>
+                        <td>100</td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                            <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

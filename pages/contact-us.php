@@ -1,4 +1,3 @@
-<?php require_once '../process/koneksi.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 

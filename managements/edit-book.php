@@ -1,4 +1,3 @@
-<?php require_once '../process/koneksi.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +14,6 @@
     <!-- NAVBAR -->
     <?php require_once '../views/navbar.php'; ?>
 
-    <!-- PROSES MENDAPATKAN DATA BUKU DARI DATABASE -->
-    <?php
-    $buku = tampilBuku($_GET['id']);
-    ?>
-
     <!-- TABLE -->
     <div class="container">
         <div class="col-md-8 bg-light table-wrapper">
@@ -30,32 +24,25 @@
                 <form>
                     <div class="form-group">
                         <label>Judul Buku</label>
-                        <input type="text" class="form-control" name="judul" placeholder="Masukkan judul buku" value="<?= $buku->judul ?>">
+                        <input type="text" class="form-control" name="judul" placeholder="Masukkan judul buku">
                     </div>
                     <div class="form-group">
                         <label>Penulis</label>
-                        <input type="text" class="form-control" name="penulis" placeholder="Penulis buku" value="<?= $buku->penulis ?>">
+                        <input type="text" class="form-control" name="penulis" placeholder="Penulis buku">
                     </div>
                     <div class="form-group">
                         <label>Tahun Terbit</label>
-                        <input type="number" class="form-control" name="tahun_terbit" placeholder="Masukkan tahun terbit" value="<?= $buku->tahun_terbit ?>">
+                        <input type="number" class="form-control" name="tahun_terbit" placeholder="Masukkan tahun terbit">
                     </div>
                     <div class="form-group">
                         <label>Jumlah Halaman</label>
-                        <input type="number" class="form-control" name="jumlah_halaman" placeholder="Masukkan jumlah halaman" value="<?= $buku->jumlah_halaman ?>">
+                        <input type="number" class="form-control" name="jumlah_halaman" placeholder="Masukkan jumlah halaman">
                     </div>
                     <button type="submit" name="editBuku" class="btn btn-primary btn-sm">Submit</button>
                 </form>
             </form>
         </div>
     </div>
-
-    <?php
-    // PROSES EDIT BUKU
-    if (isset($_POST['editBuku'])) {
-        editBuku($_GET['id'], $_POST['judul'], $_POST['penulis'], $_POST['tahun_terbit'], $_POST['jumlah_halaman']);
-    }
-    ?>
 
     <script src="../js/bootstrap.min.js"></script>
 </body>

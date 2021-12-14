@@ -1,4 +1,3 @@
-<?php require_once '../process/koneksi.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,13 +43,6 @@
             </form>
         </div>
     </div>
-
-    <?php
-    // PROSES TAMBAH BUKU
-    if (isset($_POST['tambahBuku'])) {
-        tambahBuku($_POST['judul'], $_POST['penulis'], $_POST['tahun_terbit'], $_POST['jumlah_halaman']);
-    }
-    ?>
 
     <script src="../js/bootstrap.min.js"></script>
 </body>
