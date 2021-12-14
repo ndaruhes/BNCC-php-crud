@@ -26,9 +26,8 @@
     <div class="container">
         <div class="row">
             <?php
-            $statement = $connect->prepare("SELECT * FROM books");
-            $statement->execute();
-            foreach ($statement->fetchAll() as $book) :
+            $books = tampilSemuaBuku();
+            foreach ($books as $book) :
             ?>
                 <div class="col-md-3 mb-4">
                     <div class="col-md-12 book-content bg-light">

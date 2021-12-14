@@ -34,10 +34,9 @@
                 </thead>
                 <tbody>
                     <?php
-                    $statement = $connect->prepare("SELECT * FROM books");
-                    $statement->execute();
+                    $books = tampilSemuaBuku();
                     $nomor = 1;
-                    foreach ($statement->fetchAll() as $book) :
+                    foreach ($books as $book) :
                     ?>
                         <tr>
                             <th><?= $nomor++; ?></th>

@@ -46,42 +46,9 @@
     </div>
 
     <?php
+    // PROSES TAMBAH BUKU
     if (isset($_POST['tambahBuku'])) {
-        // 1. Tanpa Validasi
-        $judul = $_POST['judul'];
-        $penulis = $_POST['penulis'];
-        $tahunTerbit = $_POST['tahun_terbit'];
-        $jumlahHalaman = $_POST['jumlah_halaman'];
-
-        $statement = $connect->prepare("INSERT INTO books (judul, penulis, tahun_terbit, jumlah_halaman) VALUES ('$judul', '$penulis', '$tahunTerbit', '$jumlahHalaman')");
-        $statement->execute();
-
-        echo '
-        <script>
-            alert("Buku berhasil ditambah")
-            window.location.href = "manage-book.php";
-        </script>';
-
-
-
-        // 2. Pakai Validasi
-        // $judul = $_POST['judul'];
-        // $penulis = $_POST['penulis'];
-        // $tahunTerbit = $_POST['tahun_terbit'];
-        // $jumlahHalaman = $_POST['jumlah_halaman'];
-
-        // if (empty(trim($judul)) || empty(trim($penulis)) || empty(trim($tahunTerbit)) || empty(trim($jumlahHalaman))) {
-        //     echo '<script>alert("Harap isi form dengan benar, tidak boleh ada yang kosong dan isi hanya spasi!")</script>';
-        // } else {
-        //     $statement = $connect->prepare("INSERT INTO books (judul, penulis, tahun_terbit, jumlah_halaman) VALUES ('$judul', '$penulis', '$tahunTerbit', '$jumlahHalaman')");
-        //     $statement->execute();
-
-        //     echo '
-        //     <script>
-        //         alert("Buku berhasil ditambah")
-        //         window.location.href = "manage-book.php";
-        //     </script>';
-        // }
+        tambahBuku($_POST['judul'], $_POST['penulis'], $_POST['tahun_terbit'], $_POST['jumlah_halaman']);
     }
     ?>
 
