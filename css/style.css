@@ -38,8 +38,5 @@
 /* FOOTER */
 .footer {
     font-size: 17px;
-    position: fixed;
-    bottom: 0;
-    margin-top: 50px;
-    width: 100%;
+    margin-top: 150px;
 }
