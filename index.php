@@ -18,7 +18,7 @@
     <div class="container bg-light banner">
         <h1>Welcome to book collection 📚😎</h1>
         <p class="w-75 mb-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking</p>
-        <a href="<?= $baseUrl . 'pages/books.php'; ?>" class="btn btn-primary">Explore Book</a>
+        <a href="#" class="btn btn-primary">Explore Book</a>
     </div>
 
     <!-- BOOK CONTENT -->

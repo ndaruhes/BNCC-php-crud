@@ -6,16 +6,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $baseURL ?>">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $baseURL . 'pages/books.php'; ?>">Books</a>
+                    <a class="nav-link" href="#">Books</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $baseURL . 'managements/manage-book.php'; ?>">Manage</a>
+                    <a class="nav-link" href="#">Manage</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $baseURL . 'pages/contact-us.php'; ?>">Contact Us</a>
+                    <a class="nav-link" href="#">Contact Us</a>
                 </li>
             </ul>
         </div>
