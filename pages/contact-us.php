@@ -18,13 +18,13 @@
     <!-- CONTACT BANNER -->
     <div class="container bg-light banner">
         <h1>Feel Free to Contact Us 📞😊</h1>
-        <p class="w-75 mb-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking</p>
+        <p class="mb-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking</p>
         <a href="#" class="btn btn-success">Whatsapp Call</a>
     </div>
 
-    <!-- BOOK CONTENT -->
+    <!-- CONTACT CONTENT -->
     <div class="container">
-        <div class="col-md-5">
+        <div class="col-md-5 py-3">
             <form>
                 <div class="row">
                     <div class="form-group col-md-6">
