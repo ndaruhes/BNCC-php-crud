@@ -11,6 +11,7 @@
 
 .banner>p {
     font-size: 20px;
+    width: 75%;
 }
 
 /* BOOKS */
@@ -39,4 +40,36 @@
 .footer {
     font-size: 17px;
     margin-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* BANNER */
+    .banner {
+        padding: 30px;
+    }
+
+    .banner>h1 {
+        font-size: 25px;
+    }
+
+    .banner>p {
+        font-size: 17px;
+        width: 100%;
+    }
+
+    /* TABLE */
+    .table-wrapper {
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .table-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .table {
+        width: 600px;
+    }
 }
