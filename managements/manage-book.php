@@ -21,7 +21,7 @@
             <h3>Manage Book</h3>
             <hr>
             <a href="<?= $baseURL . 'managements/create-book.php'; ?>" class="btn btn-dark btn-sm mb-4">Tambah Buku</a>
-            <table class=" table">
+            <table class="table">
                 <thead>
                     <tr align="center">
                         <th>#</th>
